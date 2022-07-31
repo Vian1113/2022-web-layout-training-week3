@@ -68,10 +68,10 @@ a {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px; }
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     .container {
       max-width: 720px; } }
-  @media screen and (max-width: 375px) {
+  @media (max-width: 375px) {
     .container {
       max-width: 373px; } }
 
@@ -98,7 +98,7 @@ header {
       background-size: contain; }
     header .navbar .hamburgerMenu {
       display: none; }
-      @media screen and (max-width: 375px) {
+      @media (max-width: 375px) {
         header .navbar .hamburgerMenu {
           display: block;
           font-size: 36px;
@@ -116,12 +116,12 @@ header {
     header .menu a {
       font-size: 20px;
       color: #FFFFFF; }
-    @media screen and (max-width: 375px) {
+    @media (max-width: 375px) {
       header .menu {
         display: none; } }
   header .mobileMenu {
     display: none; }
-    @media screen and (max-width: 375px) {
+    @media (max-width: 375px) {
       header .mobileMenu {
         display: block;
         position: absolute;
@@ -149,7 +149,7 @@ footer {
   footer h4 {
     font-size: 36px;
     font-weight: 400; }
-    @media screen and (max-width: 375px) {
+    @media (max-width: 375px) {
       footer h4 {
         font-size: 16px; } }
   footer a {
@@ -164,7 +164,7 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start; }
-    @media screen and (max-width: 375px) {
+    @media (max-width: 375px) {
       footer .navBottom {
         padding-top: 24px; } }
     footer .navBottom .menuBottom {
@@ -172,7 +172,7 @@ footer {
       display: -ms-flexbox;
       display: flex;
       gap: 48px; }
-      @media screen and (max-width: 375px) {
+      @media (max-width: 375px) {
         footer .navBottom .menuBottom {
           display: none; } }
       footer .navBottom .menuBottom li {
@@ -196,7 +196,7 @@ footer {
         font-size: 36px;
         margin-right: 22px;
         font-size: 48px; }
-        @media screen and (max-width: 375px) {
+        @media (max-width: 375px) {
           footer .navBottom .tel span {
             font-size: 16px; } }
     footer .navBottom .email {
@@ -212,7 +212,7 @@ footer {
       footer .navBottom .email span {
         font-size: 36px;
         margin-right: 20px; }
-        @media screen and (max-width: 375px) {
+        @media (max-width: 375px) {
           footer .navBottom .email span {
             font-size: 16px; } }
     footer .navBottom .media {
@@ -223,21 +223,21 @@ footer {
       padding-top: 48px; }
       footer .navBottom .media li:hover {
         opacity: 0.7; }
-      @media screen and (max-width: 375px) {
+      @media (max-width: 375px) {
         footer .navBottom .media {
           padding: 0;
           gap: 8px; } }
-      @media screen and (max-width: 767px) {
+      @media (max-width: 767px) {
         footer .navBottom .media {
           gap: 16px; } }
       footer .navBottom .media a {
         width: 48px;
         height: 48px; }
-        @media screen and (max-width: 767px) {
+        @media (max-width: 767px) {
           footer .navBottom .media a {
             width: 40px;
             height: 40px; } }
-        @media screen and (max-width: 375px) {
+        @media (max-width: 375px) {
           footer .navBottom .media a {
             width: 24px;
             height: 24px; } }
@@ -255,7 +255,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     border-top: 1px solid #FFFFFF; }
-    @media screen and (max-width: 375px) {
+    @media (max-width: 375px) {
       footer .copyRight {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -275,7 +275,7 @@ footer {
       display: -ms-flexbox;
       display: flex;
       gap: 48px; }
-      @media screen and (max-width: 375px) {
+      @media (max-width: 375px) {
         footer .copyRight .privacy {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
@@ -287,7 +287,7 @@ footer {
       footer .copyRight .privacy a {
         font-size: 14px;
         font-weight: 400; }
-        @media screen and (max-width: 375px) {
+        @media (max-width: 375px) {
           footer .copyRight .privacy a {
             font-size: 16px; } }
 
@@ -296,7 +296,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     .banner {
       background-image: url("../images/home-header-sm.png"); } }
   .banner .solgan {
@@ -316,23 +316,23 @@ footer {
     padding-top: 296px;
     padding-bottom: 302px;
     color: #650300; }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
       .banner .solgan {
         padding-bottom: 296px; } }
-    @media screen and (max-width: 375px) {
+    @media (max-width: 375px) {
       .banner .solgan {
         padding-bottom: 144px;
         padding-top: 144px; } }
     .banner .solgan p {
       font-size: 36px;
       font-weight: 400; }
-      @media screen and (max-width: 375px) {
+      @media (max-width: 375px) {
         .banner .solgan p {
           font-size: 16px; } }
     .banner .solgan h2 {
       font-size: 64px;
       font-weight: 700; }
-      @media screen and (max-width: 375px) {
+      @media (max-width: 375px) {
         .banner .solgan h2 {
           font-size: 24px; } }
   .banner .btn {
@@ -340,7 +340,7 @@ footer {
     padding: 10.5px 12px;
     border: 2px solid transparent;
     margin-top: 4px; }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
       .banner .btn {
         margin-top: 10px; } }
     .banner .btn:hover {
@@ -358,7 +358,7 @@ footer {
   font-size: 48px;
   color: #650300;
   font-weight: 700; }
-  @media screen and (max-width: 375px) {
+  @media (max-width: 375px) {
     .subTitle {
       font-size: 24px; } }
 
@@ -376,13 +376,13 @@ footer {
 
 .pb-2 {
   padding-bottom: 80px; }
-  @media screen and (max-width: 375px) {
+  @media (max-width: 375px) {
     .pb-2 {
       padding-bottom: 40px; } }
 
 .pt-2 {
   padding-top: 80px; }
-  @media screen and (max-width: 375px) {
+  @media (max-width: 375px) {
     .pt-2 {
       padding-top: 40px; } }
 
@@ -394,20 +394,22 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   color: #650300; }
+  @media (max-width: 767px) {
+    .serviceList {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
   .serviceList li {
     width: 23%; }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
       .serviceList li {
         width: 48%; } }
-    @media screen and (max-width: 375px) {
+    @media (max-width: 375px) {
       .serviceList li {
         width: 100%; } }
     .serviceList li span {
@@ -422,7 +424,7 @@ footer {
       text-align: left;
       color: #000000; }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .product .container {
     max-width: 336px; } }
 
@@ -430,20 +432,22 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 48px; }
-  @media screen and (max-width: 375px) {
+  @media (max-width: 767px) {
+    .productList {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  @media (max-width: 375px) {
     .productList {
       margin-top: 24px; } }
   .productList li {
     width: 33%;
     text-align: center; }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
       .productList li {
         width: 100%; } }
 
@@ -465,10 +469,10 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 48px; }
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     .cobrandList {
       row-gap: 24px; } }
-  @media screen and (max-width: 375px) {
+  @media (max-width: 375px) {
     .cobrandList {
       margin-top: 24px; } }
   .cobrandList li {
@@ -477,7 +481,7 @@ footer {
     text-align: center;
     padding-bottom: 8px;
     border: 0.5px solid #707070; }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
       .cobrandList li {
         width: 100%; } }
 
@@ -487,9 +491,12 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 24px;
   margin-top: 48px; }
-  @media screen and (max-width: 375px) {
+  @media (max-width: 375px) {
     .comment {
       margin-top: 24px;
       gap: 16px; } }
@@ -498,10 +505,10 @@ footer {
     -webkit-box-shadow: 0px 2px 6px #00000029;
             box-shadow: 0px 2px 6px #00000029;
     border-radius: 4px; }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
       .comment li {
         width: 48%; } }
-    @media screen and (max-width: 375px) {
+    @media (max-width: 375px) {
       .comment li {
         width: 100%; } }
   .comment p {
@@ -525,7 +532,7 @@ footer {
     text-align: left;
     max-width: 636px;
     margin: 0 auto; }
-    @media screen and (max-width: 767px) {
+    @media (max-width: 767px) {
       .contact .container {
         max-width: 576px; } }
     .contact .container h3 {
@@ -533,7 +540,7 @@ footer {
     .contact .container p {
       font-size: 20px;
       font-weight: 400; }
-      @media screen and (max-width: 375px) {
+      @media (max-width: 375px) {
         .contact .container p {
           font-size: 16px; } }
   .contact form {
