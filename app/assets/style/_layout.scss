@@ -1,0 +1,367 @@
+@mixin pad {
+    @media screen and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:375px) {
+        @content;
+    }
+}
+
+
+
+body {
+    font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+
+    @include pad {
+        max-width: 720px;
+    }
+
+    @include mobile{
+        max-width: 373px;
+    }
+}
+
+header {
+
+    background-color: $primary;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+
+        h1 {
+            padding-top: 16px;
+            padding-bottom: 15.43px;
+        }
+
+        .logo {
+
+            width: 80px;
+            height: 48.57px;
+            background-image: url("../images/logo-white.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+
+
+        }
+
+
+        .hamburgerMenu {
+            display: none;
+
+            @include mobile {
+                display: block;
+                font-size: $font-basic*9;
+                color: #FFFFFF;
+            }
+
+
+        }
+
+
+    }
+
+
+
+
+
+    .menu {
+        display: flex;
+        gap: 64px;
+
+        li {
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+
+        a {
+            font-size: $font-basic*5;
+            color: $light;
+
+        }
+
+
+        @include mobile {
+            display: none;
+            
+            
+
+        }
+
+
+    }
+
+
+    .mobileMenu {
+        display: none;
+
+        @include mobile {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 80px;
+            z-index: 10;
+
+            li {
+
+                text-align: center;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+                a {
+                    background-color: $primary;
+                    color: $light;
+                    font-size: $font-basic*5;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+
+
+
+}
+
+footer {
+
+    background-color: $primary;
+    color: $light;
+
+    h4 {
+        font-size: $font-basic*9;
+        font-weight: 400;
+
+        @include mobile {
+            font-size: $font-basic*4;
+        }
+
+    }
+
+
+
+    a {
+        color: $light;
+    }
+
+
+    .navBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        @include mobile {
+            padding-top: 24px;
+        }
+
+        .menuBottom {
+            display: flex;
+            gap: 48px;
+
+            @include mobile {
+                display: none;
+            }
+
+
+            li {
+                padding-top: 60.02px;
+                padding-bottom: 44.98px;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+            }
+
+            a {
+                font-size: $font-basic*4;
+                font-weight: 400;
+            }
+        }
+
+        .tel {
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+
+            span {
+                font-size: $font-basic*9;
+                margin-right: 22px;
+                font-size: $font-basic*12;
+
+                @include mobile {
+                    font-size: $font-basic*4;
+                }
+            }
+        }
+
+        .email {
+            display: flex;
+            align-items: center;
+            padding-bottom: 31px;
+
+
+
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            span {
+                font-size: $font-basic*9;
+                margin-right: 20px;
+
+                @include mobile {
+                    font-size: $font-basic*4;
+                }
+            }
+        }
+
+
+
+
+        .media {
+            display: flex;
+            gap: 32px;
+            padding-top: 48px;
+
+            li:hover {
+                opacity: 0.7;
+
+            }
+
+            @include mobile {
+                padding: 0;
+                gap: 8px;
+            }
+
+
+
+            @include pad {
+                gap: 16px;
+            }
+
+
+
+            a {
+                width: 48px;
+                height: 48px;
+
+                @include pad {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                @include mobile {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+
+
+    .copyRight {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #FFFFFF;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: start;
+            gap: 8px;
+            padding-top: 15px;
+            padding-bottom: 24px;
+        }
+
+        p {
+            font-size: $font-basic*4;
+            font-weight: 400;
+
+        }
+
+        .privacy {
+            display: flex;
+            gap: 48px;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+
+            li:hover {
+                opacity: 0.7;
+            }
+
+            a {
+                font-size: $font-small*7;
+                font-weight: 400;
+
+                @include mobile {
+                    font-size: $font-basic*4;
+                }
+
+            }
+        }
+    }
+
+
+
+}
