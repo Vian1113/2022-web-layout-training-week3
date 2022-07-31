@@ -139,7 +139,6 @@
 .serviceList {
     margin-top: 32.33px;
     display: flex;
-    
     gap: 24px;
     justify-content: center;
     text-align: center;
@@ -147,6 +146,7 @@
 
     @include pad{
         flex-wrap: wrap;
+        
     }
 
     li {
@@ -195,6 +195,7 @@
     
     gap: 24px;
     justify-content: center;
+    align-items: center;
     margin-top: $spacer-medium;
 
     @include pad{
