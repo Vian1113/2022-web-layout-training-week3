@@ -139,16 +139,21 @@
 .serviceList {
     margin-top: 32.33px;
     display: flex;
-    flex-wrap: wrap;
+    
     gap: 24px;
     justify-content: center;
     text-align: center;
     color: $secondary;
 
+    @include pad{
+        flex-wrap: wrap;
+    }
+
     li {
         width: 23%;
 
         @include pad {
+            
             width:48%;
         }
 
@@ -187,11 +192,17 @@
 
 .productList {
     display: flex;
-    flex-wrap: wrap;
+    
     gap: 24px;
     justify-content: center;
     margin-top: $spacer-medium;
+
+    @include pad{
+        flex-wrap: wrap;
+    }
+
     @include mobile {
+        
         margin-top: $spacer-small*3;;
     }
 
@@ -260,6 +271,7 @@
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     margin-top: $spacer-medium;
     @include mobile {

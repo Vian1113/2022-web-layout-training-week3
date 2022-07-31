@@ -1,11 +1,11 @@
 @mixin pad {
-    @media screen and (max-width:767px) {
+    @media(max-width:767px) {
         @content;
     }
 }
 
 @mixin mobile {
-    @media screen and (max-width:375px) {
+    @media(max-width:375px) {
         @content;
     }
 }
