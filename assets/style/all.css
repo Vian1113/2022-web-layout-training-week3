@@ -314,7 +314,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 296px;
-    padding-bottom: 302px;
+    padding-bottom: 296px;
     color: #650300; }
     @media (max-width: 767px) {
       .banner .solgan {
@@ -337,7 +337,7 @@ footer {
           font-size: 24px; } }
   .banner .btn {
     background-color: #AA0601;
-    padding: 10.5px 12px;
+    padding: 5.5px 12px;
     border: 2px solid transparent;
     margin-top: 4px; }
     @media (max-width: 767px) {
@@ -588,5 +588,28 @@ footer {
     margin: 0 4px 0 0; }
   .contact .checkBox label {
     margin: 0; }
+
+.classic .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .classic .menu .actived {
+    border-bottom: 8px solid #AA0601; }
+
+.classic a {
+  padding: 12px 150px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500; }
+
+.seriesBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .seriesBanner img {
+    max-width: 50%; }
 
 /*# sourceMappingURL=all.css.map */
