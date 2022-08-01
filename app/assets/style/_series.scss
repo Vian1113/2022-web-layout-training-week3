@@ -1,0 +1,31 @@
+.classic{
+    .menu{
+        display: flex;
+        align-items: center;
+
+        .actived{
+            border-bottom: 8px solid $primary;
+        }
+    }
+
+
+    a{
+        padding: 12px 150px;
+        color:$dark;
+        font-size: $font-basic*4;
+        font-weight: 500;
+
+    }
+
+    
+}
+
+.seriesBanner{
+    display: flex;
+    img{
+        max-width: 50%;
+    }
+}
+
+
+

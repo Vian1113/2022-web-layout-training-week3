@@ -17,7 +17,7 @@
         align-items: end;
         justify-content: center;
         padding-top: 296px;
-        padding-bottom: 302px;
+        padding-bottom: 296px;
         color: $secondary;
 
         @include pad {
@@ -54,7 +54,7 @@
 
     .btn {
         background-color: $primary;
-        padding: 10.5px 12px;
+        padding: 5.5px 12px;
         border: 2px solid transparent;
         margin-top: 4px;
 
