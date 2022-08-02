@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 'Noto Sans TC', 'Roboto', sans-serif;
+  font-family: 'Roboto','Noto Sans TC', sans-serif;
   line-height: 1.5; }
 
 *,
@@ -68,7 +68,7 @@ a {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .container {
       max-width: 720px; } }
   @media (max-width: 375px) {
@@ -118,13 +118,14 @@ header {
       color: #FFFFFF; }
     @media (max-width: 375px) {
       header .menu {
-        display: none; } }
+        display: none;
+        position: absolute; } }
   header .mobileMenu {
-    display: none; }
+    display: none;
+    position: absolute; }
     @media (max-width: 375px) {
       header .mobileMenu {
         display: block;
-        position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
@@ -141,7 +142,8 @@ header {
             padding-top: 25px;
             padding-bottom: 25px; }
             header .mobileMenu li a:hover {
-              opacity: 0.7; } }
+              background-color: #650300;
+              opacity: 0.8; } }
 
 footer {
   background-color: #AA0601;
@@ -227,13 +229,13 @@ footer {
         footer .navBottom .media {
           padding: 0;
           gap: 8px; } }
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         footer .navBottom .media {
           gap: 16px; } }
       footer .navBottom .media a {
         width: 48px;
         height: 48px; }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           footer .navBottom .media a {
             width: 40px;
             height: 40px; } }
@@ -296,7 +298,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .banner {
       background-image: url("../images/home-header-sm.png"); } }
   .banner .solgan {
@@ -316,7 +318,7 @@ footer {
     padding-top: 296px;
     padding-bottom: 296px;
     color: #650300; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .banner .solgan {
         padding-bottom: 296px; } }
     @media (max-width: 375px) {
@@ -340,7 +342,7 @@ footer {
     padding: 5.5px 12px;
     border: 2px solid transparent;
     margin-top: 4px; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .banner .btn {
         margin-top: 10px; } }
     .banner .btn:hover {
@@ -400,13 +402,13 @@ footer {
           justify-content: center;
   text-align: center;
   color: #650300; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .serviceList {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
   .serviceList li {
     width: 23%; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .serviceList li {
         width: 48%; } }
     @media (max-width: 375px) {
@@ -424,7 +426,7 @@ footer {
       text-align: left;
       color: #000000; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .product .container {
     max-width: 336px; } }
 
@@ -440,7 +442,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 48px; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .productList {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
@@ -450,7 +452,7 @@ footer {
   .productList li {
     width: 33%;
     text-align: center; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .productList li {
         width: 100%; } }
 
@@ -472,7 +474,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 48px; }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     .cobrandList {
       row-gap: 24px; } }
   @media (max-width: 375px) {
@@ -484,7 +486,7 @@ footer {
     text-align: center;
     padding-bottom: 8px;
     border: 0.5px solid #707070; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .cobrandList li {
         width: 100%; } }
 
@@ -494,9 +496,9 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 24px;
   margin-top: 48px; }
   @media (max-width: 375px) {
@@ -508,7 +510,7 @@ footer {
     -webkit-box-shadow: 0px 2px 6px #00000029;
             box-shadow: 0px 2px 6px #00000029;
     border-radius: 4px; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .comment li {
         width: 48%; } }
     @media (max-width: 375px) {
@@ -535,7 +537,7 @@ footer {
     text-align: left;
     max-width: 636px;
     margin: 0 auto; }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .contact .container {
         max-width: 576px; } }
     .contact .container h3 {
@@ -611,5 +613,58 @@ footer {
   display: flex; }
   .seriesBanner img {
     max-width: 50%; }
+
+.productDetail {
+  text-align: center; }
+  .productDetail h2 {
+    font-size: 42px;
+    font-weight: 500; }
+  .productDetail h3 {
+    font-size: 32px;
+    font-weight: 400; }
+  .productDetail p {
+    font-size: 24px;
+    font-weight: 400; }
+
+.itemList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px; }
+  .itemList li {
+    width: 23%; }
+  .itemList .detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .itemList .colorList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px; }
+  .itemList .dark, .itemList .light {
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer; }
+    .itemList .dark:hover, .itemList .light:hover {
+      opacity: 0.7; }
+  .itemList .dark {
+    background-color: #5F3E2D; }
+  .itemList .light {
+    background-color: #B75929; }
+
+.textRed {
+  color: #AA0601;
+  font-weight: 500; }
 
 /*# sourceMappingURL=all.css.map */
