@@ -4,25 +4,37 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        
 
 
 
         li {
+            
             width: 33.33%;
+            border-bottom:8px solid transparent;
+            &:hover{
+                background-color:$gray-100;
+            }
         }
 
         .actived {
-            border-bottom: 8px solid $primary;
+            border-color: $primary;
         }
     }
 
 
     a {
-        padding: 24px 0px;
+        padding: 24px 0px 16px;
         color: $dark;
-        font-size: $font-basic*4;
+        font-size: $font-basic*8;
         font-weight: 500;
 
+        @include mobile{
+            font-size: $font-basic*4;
+            padding:16px 0px 8px;
+        }
+
+        
     }
 
 
@@ -30,42 +42,68 @@
 
 .seriesBanner {
 
-    li{
-        width: 50%;
-    }
-
-    .normalSize {
+    .normalSize{
         display: flex;
-        @include pad {
-            display:none;
+    }
+    li {
+        height: 296px;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include mobile{
+            height: 136px;
         }
 
+        &:first-child {
+            background-image: url("../images/product-header-1.png");
+
+            @include pad {
+                background-image: url("../images/product-header-sm-1.png");
+            }
+
+            
+
+        }
+
+        &:last-child {
+            background-image: url("../images/product-header-2.png");
+            @include pad {
+                background-image: url("../images/product-header-sm-2.png");
+            }
+        }
     }
+
+
+
+    
 
 
 }
 
-.smallSize{
-    display: none;
-    @include pad {
-        display:block;
-        ul{
-            display: flex;
-        }
-    }
-}
+
 
 .productDetail {
     text-align: center;
+    
 
     h2 {
         font-size: $font-small*21;
         font-weight: 500;
+        @include mobile{
+            font-size: $font-basic*6;
+        }
+
+        
     }
 
     h3 {
         font-size: $font-basic*8;
         font-weight: 400;
+        @include mobile{
+            font-size: $font-basic*6;
+        }
+        
     }
 
     p {
@@ -86,6 +124,10 @@
 
         @include pad {
             width: 48%;
+        }
+
+        @include mobile{
+            width:100%;
         }
     }
 
@@ -127,10 +169,11 @@
     }
 }
 
-.textRed {
+.price {
     color: $primary;
     font-weight: 500;
 }
+
 
 .page {
     display: flex;
@@ -151,6 +194,7 @@
 
     li {
 
+        
 
         &:first-child,
         &:last-child {
@@ -160,6 +204,10 @@
                 font-weight: 400;
                 font-family: 'Roboto', sans-serif;
                 line-height: 29px;
+                @include mobile{
+                    font-size:$font-basic*4;
+                    padding:11.5px 13.5px;
+                }
             }
         }
 
@@ -170,6 +218,10 @@
                 font-weight: 400;
                 border-left: none;
                 line-height: 27px;
+                @include mobile{
+                    font-size:$font-basic*4;
+                    padding: 12px 15.5px;
+                }
             }
         }
 

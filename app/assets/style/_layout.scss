@@ -13,7 +13,7 @@
 
 
 body {
-    font-family: 'Roboto','Noto Sans TC', sans-serif;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
     line-height: 1.5;
 }
 
@@ -44,7 +44,7 @@ a {
         max-width: 720px;
     }
 
-    @include mobile{
+    @include mobile {
         max-width: 373px;
     }
 }
@@ -57,6 +57,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
 
 
 
@@ -78,7 +79,7 @@ header {
 
 
         .hamburgerMenu {
-           
+
             display: none;
 
             @include mobile {
@@ -121,7 +122,7 @@ header {
         @include mobile {
             display: none;
             position: absolute;
-            
+
 
         }
 
@@ -130,16 +131,17 @@ header {
 
 
     .mobileMenu {
-        display: none;
-        position:absolute;
+        display:none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 80px;
+        z-index: 10;
 
         @include mobile {
             display: block;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 80px;
-            z-index: 10;
+
 
             li {
 
