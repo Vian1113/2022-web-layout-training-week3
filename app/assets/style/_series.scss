@@ -40,9 +40,9 @@
 
 }
 
-.seriesBanner {
+.opticalBanner, .sunglassesBanner {
 
-    .normalSize{
+    .bannerList{
         display: flex;
     }
     li {
@@ -243,6 +243,43 @@
         color: #FFFFFF;
         background-color: $dark;
 
+
+    }
+}
+
+.sunglassesBanner{
+    li {
+
+        &:first-child {
+            background-image: url("../images/product-header-3.png");
+
+            @include pad {
+                background-image: url("../images/product-header-sm-3.png");
+            }
+
+            
+
+        }
+
+        &:last-child {
+            background-image: url("../images/product-header-4.png");
+            @include pad {
+                background-image: url("../images/product-header-sm-4.png");
+            }
+        }
+    }
+}
+
+.sunglassesList{
+    li{
+        width:32%;
+        @include pad {
+            width: 48%;
+        }
+
+        @include mobile{
+            width:100%;
+        }
 
     }
 }

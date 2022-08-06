@@ -1,0 +1,60 @@
+---
+title: 門市據點-台北中山旗艦店
+layout: ./app/layout.ejs
+engine: ejs
+
+---
+
+<div class="location">
+    <div class="container">
+        <div class="title">
+            <h2>門市據點</h2>
+        </div>
+        <div class="select">
+
+            <label for="stores">選擇地區</label>
+            <select name="stores">
+                <option value="台北中山旗艦店" selected>台北中山旗艦店</option>
+                <option value="台北綠園店">台北綠園店</option>
+
+
+            </select>
+        </div>
+        <ul class="stores">
+            <li class="storesList storeMap">
+                <div class="storeImage">
+                    <img src="./assets/images/store-1.png" alt="台北中山旗艦店">
+                </div>
+                <div class="storeInfo">
+                    <h3>台北中山旗艦店</h3>
+                    <ul class="detail">
+                        <li>
+                            <span class="material-symbols-outlined">
+                                call
+                            </span>
+                            <p><a href="tel:02-000-1234">電話：(02)000-1234</a></p>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">
+                                schedule
+                            </span>
+                            <p>營業時間：10:00-21:00</p>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            <p>地址：台北市中山區南京東路25巷2-1號</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+            <li class="map">
+                <img src="./assets/images/map.png" alt="台北中山旗艦店地圖">
+
+            </li>
+
+        </ul>
+    </div>
+</div>

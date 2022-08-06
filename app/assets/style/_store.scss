@@ -1,0 +1,182 @@
+
+.location{
+    padding-top: $spacer-small*12;
+    padding-bottom: $spacer-large;
+
+    @include pad{
+        padding-top: $spacer-large;
+    }
+
+    @include mobile{
+        padding-top:$spacer-basic;
+        padding-bottom: $spacer-small*8;
+    }
+
+    .title{
+        border-left:8px solid #9F1213; 
+        padding-left: $spacer-small*2;
+        font-size: $font-basic*12;
+        font-weight: 700;
+        margin-bottom: $spacer-small*4;
+
+        @include mobile{
+            font-size: $font-basic*6;
+        }
+
+        @include mobile{
+            margin-bottom: $spacer-small*3;
+        }
+       
+    }
+
+    .select{
+        display: flex;
+        align-items: center;
+        margin-bottom: $spacer-basic;
+
+        @include mobile{
+            margin-bottom: $spacer-small*3;
+        }
+
+        label{
+            font-size:$font-basic*6;
+            font-weight: 400;
+            margin-right: $spacer-small*2;
+
+            @include mobile{
+                font-size: $font-basic*4;
+                margin-right: $spacer-small;
+            }
+        }
+    
+        select{
+            width: 304px;
+            font-size: $font-small*9;
+            font-weight: 400;
+            padding:6px 12px;
+            color:#495057;
+
+            @include mobile{
+                width: 276px;
+            }
+        }
+    }
+
+    
+
+
+
+}
+
+.stores{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    color:$dark-100;
+    a{
+        color:$dark-100;
+    }
+
+    .storesList{
+        width:32%;
+
+        @include pad{
+            width: 48%;
+        }
+
+        @include mobile{
+            width: 100%;
+        }
+        
+        h3{
+            padding-top:$spacer-small;
+            padding-bottom: $spacer-small;
+            padding-left: $spacer-small*3;
+            font-size:$font-basic*6 ;
+            font-weight: 400;
+            border: 1px solid #00000020;
+            
+        }
+    }
+
+    .detail{
+        border: 1px solid #00000020;
+        border-top:none;
+        padding:$spacer-small*2 $spacer-small*3;
+
+        span{
+            margin-right: 12px;
+        }
+        p{
+            font-size:$font-basic*5;
+            font-weight: 400;
+        }
+        li{
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+
+        }
+    }
+
+    .btn{
+
+        a{
+            color:$light;
+            background-color: $dark;
+            text-align: center;
+            padding:$spacer-small*2 0;
+            font-size: 19px;
+            font-weight: 400;
+
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .storeMap{
+        width:38%;
+
+        @include pad{
+            width: 100%;
+            display: flex;
+            gap: 24px;
+
+            img{
+                height: 100%;
+            }
+
+            .storeImage, .storeInfo{
+                width: 50%;
+               
+            }
+
+            
+        }
+
+        @include mobile{
+            flex-direction: column;
+            gap:0;
+            .storeImage, .storeInfo{
+                width: 100%;
+               
+            }
+
+        }
+    }
+
+    .map{
+        width: 58%;
+        img{
+            height: 100%;
+        }
+        
+
+        @include pad{
+            width: 100%;
+        }
+    }
+
+}
+
