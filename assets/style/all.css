@@ -620,29 +620,29 @@ footer {
       font-size: 16px;
       padding: 16px 0px 8px; } }
 
-.seriesBanner .normalSize {
+.opticalBanner .bannerList, .sunglassesBanner .bannerList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.seriesBanner li {
+.opticalBanner li, .sunglassesBanner li {
   height: 296px;
   width: 50%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
   @media (max-width: 375px) {
-    .seriesBanner li {
+    .opticalBanner li, .sunglassesBanner li {
       height: 136px; } }
-  .seriesBanner li:first-child {
+  .opticalBanner li:first-child, .sunglassesBanner li:first-child {
     background-image: url("../images/product-header-1.png"); }
     @media (max-width: 768px) {
-      .seriesBanner li:first-child {
+      .opticalBanner li:first-child, .sunglassesBanner li:first-child {
         background-image: url("../images/product-header-sm-1.png"); } }
-  .seriesBanner li:last-child {
+  .opticalBanner li:last-child, .sunglassesBanner li:last-child {
     background-image: url("../images/product-header-2.png"); }
     @media (max-width: 768px) {
-      .seriesBanner li:last-child {
+      .opticalBanner li:last-child, .sunglassesBanner li:last-child {
         background-image: url("../images/product-header-sm-2.png"); } }
 
 .productDetail {
@@ -754,5 +754,158 @@ footer {
 .currentPage a {
   color: #FFFFFF;
   background-color: #000000; }
+
+.sunglassesBanner li:first-child {
+  background-image: url("../images/product-header-3.png"); }
+  @media (max-width: 768px) {
+    .sunglassesBanner li:first-child {
+      background-image: url("../images/product-header-sm-3.png"); } }
+
+.sunglassesBanner li:last-child {
+  background-image: url("../images/product-header-4.png"); }
+  @media (max-width: 768px) {
+    .sunglassesBanner li:last-child {
+      background-image: url("../images/product-header-sm-4.png"); } }
+
+.sunglassesList li {
+  width: 32%; }
+  @media (max-width: 768px) {
+    .sunglassesList li {
+      width: 48%; } }
+  @media (max-width: 375px) {
+    .sunglassesList li {
+      width: 100%; } }
+
+.location {
+  padding-top: 96px;
+  padding-bottom: 80px; }
+  @media (max-width: 768px) {
+    .location {
+      padding-top: 80px; } }
+  @media (max-width: 375px) {
+    .location {
+      padding-top: 40px;
+      padding-bottom: 64px; } }
+  .location .title {
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 32px; }
+    @media (max-width: 375px) {
+      .location .title {
+        font-size: 24px; } }
+    @media (max-width: 375px) {
+      .location .title {
+        margin-bottom: 24px; } }
+  .location .select {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px; }
+    @media (max-width: 375px) {
+      .location .select {
+        margin-bottom: 24px; } }
+    .location .select label {
+      font-size: 24px;
+      font-weight: 400;
+      margin-right: 16px; }
+      @media (max-width: 375px) {
+        .location .select label {
+          font-size: 16px;
+          margin-right: 8px; } }
+    .location .select select {
+      width: 304px;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 6px 12px;
+      color: #495057; }
+      @media (max-width: 375px) {
+        .location .select select {
+          width: 276px; } }
+
+.stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+  color: #212529; }
+  .stores a {
+    color: #212529; }
+  .stores .storesList {
+    width: 32%; }
+    @media (max-width: 768px) {
+      .stores .storesList {
+        width: 48%; } }
+    @media (max-width: 375px) {
+      .stores .storesList {
+        width: 100%; } }
+    .stores .storesList h3 {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 24px;
+      font-size: 24px;
+      font-weight: 400;
+      border: 1px solid #00000020; }
+  .stores .detail {
+    border: 1px solid #00000020;
+    border-top: none;
+    padding: 16px 24px; }
+    .stores .detail span {
+      margin-right: 12px; }
+    .stores .detail p {
+      font-size: 20px;
+      font-weight: 400; }
+    .stores .detail li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 8px;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+  .stores .btn a {
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 19px;
+    font-weight: 400; }
+    .stores .btn a:hover {
+      opacity: 0.7; }
+  .stores .storeMap {
+    width: 38%; }
+    @media (max-width: 768px) {
+      .stores .storeMap {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 24px; }
+        .stores .storeMap img {
+          height: 100%; }
+        .stores .storeMap .storeImage, .stores .storeMap .storeInfo {
+          width: 50%; } }
+    @media (max-width: 375px) {
+      .stores .storeMap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 0; }
+        .stores .storeMap .storeImage, .stores .storeMap .storeInfo {
+          width: 100%; } }
+  .stores .map {
+    width: 58%; }
+    .stores .map img {
+      height: 100%; }
+    @media (max-width: 768px) {
+      .stores .map {
+        width: 100%; } }
 
 /*# sourceMappingURL=all.css.map */
