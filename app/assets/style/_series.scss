@@ -10,7 +10,7 @@
 
         li {
             
-            width: 33.33%;
+            width: 32%;
             border-bottom:8px solid transparent;
             &:hover{
                 background-color:$gray-100;
@@ -29,7 +29,7 @@
         font-size: $font-basic*8;
         font-weight: 500;
 
-        @include mobile{
+        @include pad-small{
             font-size: $font-basic*4;
             padding:16px 0px 8px;
         }
@@ -51,7 +51,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        @include mobile{
+        @include pad-small{
             height: 136px;
         }
 
@@ -90,7 +90,7 @@
     h2 {
         font-size: $font-small*21;
         font-weight: 500;
-        @include mobile{
+        @include pad-small{
             font-size: $font-basic*6;
         }
 
@@ -100,7 +100,7 @@
     h3 {
         font-size: $font-basic*8;
         font-weight: 400;
-        @include mobile{
+        @include pad-small{
             font-size: $font-basic*6;
         }
         
@@ -126,7 +126,7 @@
             width: 48%;
         }
 
-        @include mobile{
+        @include pad-small{
             width:100%;
         }
     }
@@ -204,7 +204,7 @@
                 font-weight: 400;
                 font-family: 'Roboto', sans-serif;
                 line-height: 29px;
-                @include mobile{
+                @include pad-small{
                     font-size:$font-basic*4;
                     padding:11.5px 13.5px;
                 }
@@ -218,7 +218,7 @@
                 font-weight: 400;
                 border-left: none;
                 line-height: 27px;
-                @include mobile{
+                @include pad-small{
                     font-size:$font-basic*4;
                     padding: 12px 15.5px;
                 }
@@ -277,7 +277,7 @@
             width: 48%;
         }
 
-        @include mobile{
+        @include pad-small{
             width:100%;
         }
 

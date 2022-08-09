@@ -7,7 +7,7 @@
         padding-top: $spacer-large;
     }
 
-    @include mobile{
+    @include pad-small{
         padding-top:$spacer-basic;
         padding-bottom: $spacer-small*8;
     }
@@ -19,13 +19,12 @@
         font-weight: 700;
         margin-bottom: $spacer-small*4;
 
-        @include mobile{
+        @include pad-small{
             font-size: $font-basic*6;
-        }
-
-        @include mobile{
             margin-bottom: $spacer-small*3;
         }
+
+        
        
     }
 
@@ -34,7 +33,7 @@
         align-items: center;
         margin-bottom: $spacer-basic;
 
-        @include mobile{
+        @include pad-small{
             margin-bottom: $spacer-small*3;
         }
 
@@ -43,7 +42,7 @@
             font-weight: 400;
             margin-right: $spacer-small*2;
 
-            @include mobile{
+            @include pad-small{
                 font-size: $font-basic*4;
                 margin-right: $spacer-small;
             }
@@ -56,7 +55,7 @@
             padding:6px 12px;
             color:#495057;
 
-            @include mobile{
+            @include pad-small{
                 width: 276px;
             }
         }
@@ -84,7 +83,7 @@
             width: 48%;
         }
 
-        @include mobile{
+        @include pad-small{
             width: 100%;
         }
         
@@ -155,7 +154,7 @@
             
         }
 
-        @include mobile{
+        @include pad-small{
             flex-direction: column;
             gap:0;
             .storeImage, .storeInfo{
