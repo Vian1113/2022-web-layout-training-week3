@@ -205,7 +205,7 @@ footer {
         font-size: $font-basic*9;
         font-weight: 400;
 
-        @include pad-small {
+        @include pad-medium {
             font-size: $font-basic*4;
         }
 
@@ -223,7 +223,7 @@ footer {
         justify-content: space-between;
         align-items: start;
 
-        @include pad-small {
+        @include pad-medium {
             padding-top: 24px;
         }
 
@@ -231,8 +231,9 @@ footer {
             display: flex;
             gap: 48px;
 
-            @include pad-small {
+            @include pad-medium {
                 display: none;
+                position: absolute;
             }
 
 
@@ -266,7 +267,7 @@ footer {
                 margin-right: 22px;
                 font-size: $font-basic*12;
 
-                @include pad-small {
+                @include pad-medium {
                     font-size: $font-basic*4;
                 }
             }
@@ -288,7 +289,7 @@ footer {
                 font-size: $font-basic*9;
                 margin-right: 20px;
 
-                @include pad-small {
+                @include pad-medium {
                     font-size: $font-basic*4;
                 }
             }
@@ -307,16 +308,18 @@ footer {
 
             }
 
-            @include pad-small {
-                padding: 0;
-                gap: 8px;
-            }
-
+           
 
 
             @include pad {
                 gap: 16px;
             }
+
+            @include pad-medium {
+                padding: 0;
+                gap: 8px;
+            }
+
 
 
 
@@ -329,7 +332,7 @@ footer {
                     height: 40px;
                 }
 
-                @include pad-small {
+                @include pad-medium {
                     width: 24px;
                     height: 24px;
                 }
