@@ -11,6 +11,12 @@
         background-image: url("../images/home-header-sm.png");
     }
 
+    @include pad-medium {
+        height: 396px;
+    }
+
+    
+
    
 
     .solgan {
@@ -26,7 +32,7 @@
             font-size: $font-basic*9;
             font-weight: 400;
 
-            @include pad-small{
+            @include pad-medium{
                 font-size: $font-basic*4;
             }
 
@@ -36,7 +42,7 @@
             font-size: $font-basic*16;
             font-weight: 700;
 
-            @include pad-small{
+            @include pad-medium{
                 font-size: $font-basic*6;
             }
 
